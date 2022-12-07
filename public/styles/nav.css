@@ -1,0 +1,12 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bungee", sans-serif;
+  height: 120px;
+  width: 100%;
+  background: #4056a1;
+  color: #FFFFFF;
+  padding: 1.5em;
+  position: fixed;
+}
+.icon{color: red}
