@@ -33,3 +33,7 @@
   height: 2.5rem;
   width: 7rem;
  }
+ 
+ .invalid {
+  color: red;
+ }
