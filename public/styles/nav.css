@@ -9,4 +9,8 @@ nav {
   padding: 1.5em;
   position: fixed;
 }
-.icon{color: red}
+.icon{
+  display: flex;
+  color: red;
+  justify-content: center;
+}
