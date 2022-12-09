@@ -8,6 +8,8 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
+  <!--TimeAgo  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,39 +58,25 @@
   <main class="container">
     <section class="new-tweet">
       <!-- <h2>ComposeTweet</h2> -->
-      <form method="post" action="/tweets">
-        <label for="tweet-text"></label>
+      <span id="error-message-noTweet" class="error-message-container">
+        <i class="fas fa-exclamation-triangle"></i>
+        Please include tweet before creating a new Tweet!
+        <i class="fas fa-exclamation-triangle"></i>
+      </span>
+      <span id="error-message-tooManyCharacters" class="error-message-container">
+        <i class="fas fa-exclamation-triangle"></i>
+        Please reduce amount of characters before creating a new Tweet!
+        <i class="fas fa-exclamation-triangle"></i>
+      </span>
+      <form method="post" action="/tweets" id="new-tweet-form">
         <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
-        <div class="new-tweet1">
-          <button class="fa-light fa-rectangle-wide" type="submit">Tweet</button>
+        <div class="new-tweet-footer">
+          <button class="fa-light fa-rectangle-wide" type="submit" id="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
     <section id="tweets-container">
-      <!-- <article class="tweet">
-        <header class="tweet-header">
-          <div>
-            <img class="user-icon"/>
-            <span class="user-name">${tweetData.user.name}</span>
-          </div>  
-          <span class="user-handle">${tweetData.user.handle}</span>
-        </header>
-        <div class="tweet-text">
-          placeholder=
-        </div>
-        <footer class="tweet-footer">
-          <div class="tweetDate">
-            10 days ago
-          </div>
-          <div class="responses">
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-light fa-heart"></i>
-            <i class="fa-regular fa-comment"></i>
-          </div>
-        </footer>
-        
-      </article> -->
     </section>
   </main>
 </body>

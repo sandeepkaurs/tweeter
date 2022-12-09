@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #090908;
-  background-color: #ad7315;
+  background-color: #dfa240;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
   background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
@@ -27,7 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 90%;
-  background-color: #ad7315;
+  background-color: #dfa240;
   background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
   margin-right: auto;
   margin-left: auto ;

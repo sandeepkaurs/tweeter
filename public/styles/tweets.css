@@ -1,23 +1,39 @@
 #tweets-container {
   display: flex;
   flex-direction: column;
-  background-color: #f4f1ec;
-  font-family: sans-serif;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  background-color: #ad7315;
-  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-}
-.img{
-  color: black;
-}
-.tweet {
-  width: 1100px;
-  height: 200px;
+  font-family: sans-serif;
   border-style: solid;
-  color: black;
+  background-color: white;
+  margin: 20px;
 }
+/* avatar image */
+.tweet img {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 75px;
+  max-height: 75px;
+  height: auto;
+  width: auto;
+}
+
+/* affects @user id name */
+.user-handle {
+  color: #85b6e8;
+}
+
+.tweet {
+  width: 1300px;
+  height: 220px;
+  color: black;
+  border: solid black 5px;
+  margin: 10px;
+}
+ .tweet:hover {
+  box-shadow: 10px 10px rgb(62, 29, 147);
+ }
+
 .tweet-text {
   margin-left: 20px;
   margin-right: 20px;
@@ -32,14 +48,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
-  margin-bottom: 70px;
+  font-size: 23px;
+  margin: 10px;
 }
 
 .tweet-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 20px;
-  margin: 20px;
+  font-size: 23px;
+  margin: 10px;
 }
+
