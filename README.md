@@ -16,3 +16,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+**#Project forked and redesigned by Sandeep Singh.**
+##Added some of my favorite colors and design elements which represent my personality.
