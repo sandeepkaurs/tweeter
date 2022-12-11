@@ -18,6 +18,10 @@
   width: auto;
 }
 
+.responses > i:hover {
+  color: goldenrod
+}
+
 /* affects @user id name */
 .user-handle {
   color: #85b6e8;
@@ -41,6 +45,7 @@
   border-bottom: solid;
   color: black;
   font: black;
+  word-break: break-all;
 }
 
 .tweet-header {
@@ -60,3 +65,8 @@
   margin: 10px;
 }
 
+@media only screen and(min-width: 1024px) {
+  #tweets-container {
+    width: 100%;
+  }
+}

@@ -1,16 +1,28 @@
 nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-family: "Bungee", sans-serif;
   height: 120px;
   width: 100%;
   background: #4056a1;
   color: #FFFFFF;
-  padding: 1.5em;
   position: fixed;
+  z-index: 3;
 }
-.icon{
+.icon {
   display: flex;
   color: red;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    height: 120px;
+  }
+
+  .icon {
+    font-size: 2.25rem;
+  }
 }

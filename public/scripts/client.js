@@ -6,8 +6,9 @@
 
 // creating new tweet element
 $(document).ready(function () {
+
   $("#error-message-noTweet").hide();
-  $("error-message-tooManyCharacters").hide();
+  $("#error-message-tooManyCharacters").hide();
 
   const data = [];
 
@@ -20,10 +21,8 @@ $(document).ready(function () {
   };
 
   const renderTweets = function(tweets) {
-    // console.log(tweets)
     $('#tweets-container').empty();
     for (let tweet of tweets) {
-      // console.log(tweet)
       const $tweet = newTweetElement(tweet);
       $('#tweets-container').append($tweet)
     }
@@ -48,7 +47,7 @@ $(document).ready(function () {
           </span>
           <div class="responses">
             <i class="fa-solid fa-retweet"></i>
-            <i class="fa-light fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
             <i class="fa-regular fa-comment"></i>
           </div>
         </footer>
@@ -71,15 +70,15 @@ $(document).ready(function () {
     const maxCharacters = 140;
     const inputValue = $(this).find("#tweet-text").val().length;
 
-    $("error-message-noTweet").slideUp("slow");
-    $("error-message-tooManyCharacters").slideUp("slow");
+    $("#error-message-noTweet").slideUp("slow");
+    $("#error-message-tooManyCharacters").slideUp("slow");
 
     if (!inputValue) {
-      $("error-message-noTweet").slideDown("slow");
-      $("error-message-tooManyCharacters").hide();
+      $("#error-message-noTweet").slideDown("slow");
+      $("#error-message-tooManyCharacters").hide();
     } else if (inputValue - maxCharacters > 0) {
-      $("error-message-tooManyCharacters").slideDown("slow");
-      $("error-message-noTweet").hide();
+      $("#error-message-tooManyCharacters").slideDown("slow");
+      $("#error-message-noTweet").hide();
     } else {
       const newTweets = $(this).serialize();
       $.post("/tweets/", newTweets, () => {
@@ -90,10 +89,3 @@ $(document).ready(function () {
     }
   });
 });
-  // const $tweet = newTweetElement(tweetData);
-  // console.log("hi there");
-  // // Test / driver code (temporary)
-  // console.log($tweet); // to see what it looks like
-  // $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
-  //renderTweets(tweetData);
-
