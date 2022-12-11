@@ -24,3 +24,5 @@ Screenshots
 
 
 ![Screenshot of minimized window](https://github.com/sandeepkaurs/tweeter/blob/master/docs/Screenshot%201.png)
+![Screenshot of normal tweeter page](https://github.com/sandeepkaurs/tweeter/blob/master/docs/Screenshot%20Normal.png)
+![Screenshot of too many characters](https://github.com/sandeepkaurs/tweeter/blob/master/docs/Screenshot-Too%20many%20characters.png)
