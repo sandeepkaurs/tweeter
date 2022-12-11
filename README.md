@@ -19,3 +19,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 **#Project forked and redesigned by Sandeep Singh.**
 ##Added some of my favorite colors and design elements which represent my personality.
+
+##Screenshots
+
+
+![Screenshot of minimized window](https://github.com/sandeepkaurs/tweeter/blob/master/docs/Screenshot%201.png)
